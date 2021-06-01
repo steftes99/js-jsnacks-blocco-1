@@ -14,3 +14,22 @@ if(parola1.length > parola2.length){
 } else {
     document.getElementById('stampa1').innerHTML = 'sono uguali';
 }
+
+// Esercizio2
+// Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti. Esegui questo programma in due versioni, con il for e con il while.
+var somma = 0;
+var i = 0;
+
+for (var i = 0; i < 5; i++){
+    var numero = parseInt(prompt('Inserisci un numero'));
+    somma += numero;
+}
+document.getElementById('risultato').innerHTML = somma;
+
+while(i < 5);{
+    var numero = parseInt(prompt('Inserisci un numero'));
+    somma += numero;
+    i++;
+}
+document.getElementById('risultato-2').innerHTML = somma;
+
