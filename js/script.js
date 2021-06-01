@@ -37,10 +37,22 @@ document.getElementById('risultato-2').innerHTML = somma;
 // Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array
 var numeri = [];
 
-for(i = 0; i < 6; i++){
+for(var i = 0; i < 6; i++){
     var cifra = parseInt(prompt('Inserisci un numero'));
     if(cifra % 2 != 0){
         numeri.push(cifra);
     }
 }
 document.getElementById('esercizio3').innerHTML = numeri;
+
+// Esercizio4
+// In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
+var invitati = ['pippo', 'topolino', 'pluto', 'paperino', 'supermario'];
+
+var utente = prompt('Controlla se sei invitato, scrivi il tuo nome');
+
+if(invitati.includes(utente)){
+    document.getElementById('esercizio4').innerHTML = 'Sei invitato!'
+} else {
+    document.getElementById('esercizio4').innerHTML = 'Mi dispiace, non sei invitato'
+}
