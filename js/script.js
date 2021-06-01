@@ -33,3 +33,14 @@ while(i < 5);{
 }
 document.getElementById('risultato-2').innerHTML = somma;
 
+// Esercizio3
+// Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array
+var numeri = [];
+
+for(i = 0; i < 6; i++){
+    var cifra = parseInt(prompt('Inserisci un numero'));
+    if(cifra % 2 != 0){
+        numeri.push(cifra);
+    }
+}
+document.getElementById('esercizio3').innerHTML = numeri;
